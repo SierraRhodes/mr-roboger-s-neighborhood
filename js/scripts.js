@@ -59,19 +59,22 @@ function beepBoop(num) {
   const targets = [1];
   const targets2 = [2];
   const targets3 = [3];
-  const targets4 = [1,2];
   let numbers = [];
   for (let i = 0; i <= num; i++) {
     let iString = i.toString();
-    if (targets.some(target =>iString.includes(target))) {
-      numbers.push("Beep!");
-    } else if (targets4.some(target =>iString.includes(target))) {
+    if (iString.includes(targets2[0]) && iString.includes(targets[0])) {
+      numbers.push("Boop!");
+  
+    } else if (iString.includes(targets[0]) && iString.includes(targets3[0])) {
+      numbers.push("Won't you be my neighbor?");
+    } else if (targets.some(target =>iString.includes(target))) {
       numbers.push("Beep!");
     } else if (targets2.some(target =>iString.includes(target))) {
       numbers.push("Boop!");
     } else if (targets3.some(target => iString.includes(target))) {
       numbers.push("Won't you be my neighbor?");
     } else {
+      numbers.push(i);
     }
   }
   return numbers;
