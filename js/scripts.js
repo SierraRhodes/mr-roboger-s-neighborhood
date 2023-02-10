@@ -1,3 +1,4 @@
+//Business Logic 
 function beepBoop(num) {
 let numbers = [];
 for (let i = 0; i <= num; i++) {
@@ -64,7 +65,8 @@ function beepBoop(num) {
     let iString = i.toString();
     if (iString.includes(targets2[0]) && iString.includes(targets[0])) {
       numbers.push("Boop!");
-  
+    } else if (iString.includes(targets2[0]) && iString.includes(targets3[0])) {
+      numbers.push("Won't you be my neighbor?");
     } else if (iString.includes(targets[0]) && iString.includes(targets3[0])) {
       numbers.push("Won't you be my neighbor?");
     } else if (targets.some(target =>iString.includes(target))) {
@@ -79,3 +81,17 @@ function beepBoop(num) {
   }
   return numbers;
 }
+
+// UI Logic 
+
+function handleForm(event) {
+  event.preventDefault();
+  const userInput = parseInt(document.getElementById("floatingInput").value);
+  const results = beepBoop(userInput);
+  document.getElementById("results").innerHTML = results.join(", ");
+}
+
+window.addEventListener("load", function() {
+   const form = document.querySelector("form")
+addEventListener("submit", handleForm)
+});

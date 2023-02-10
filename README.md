@@ -24,11 +24,15 @@ Code:
 beepBoop(20)
 Expected Output: [0,"Beep!","Boop!,"Won't you be my neighbor?",4,5,6,7,8,9,"Beep!", "Beep!", "Beep!", "Beep!", "Beep!", "Beep!", "Beep!, "Beep!", "Beep!", "Beep!", "Boop!]
 
-Test: It should substitute any number not only containing 2 but also 1. 
+Test: It should substitute any number not only containing 1 but also 2. 
 Code:beepBoop(21) 
 Expected Output: [0,"Beep!","Boop!,"Won't you be my neighbor?",4,5,6,7,8,9,"Beep!", "Beep!", "Beep!", "Beep!", "Beep!", "Beep!", "Beep!, "Beep!", "Beep!", "Beep!", "Boop!, "Beep!"]  
 
 
 Test: It should substitute any number not only containing 1 but also 3. 
-Code:beepBoop(15) 
-Expected Output: [0,"Beep!","Boop!,"Won't you be my neighbor?",4,5,6,7,8,9,"Beep!", "Beep!", "Beep!", "Won't you be my neighbor?", "Beep!", "Beep!"] 
+Code: beepBoop(15) 
+Expected Output: [0,"Beep!","Boop!,"Won't you be my neighbor?",4,5,6,7,8,9,"Beep!", "Beep!", "Beep!", "Won't you be my neighbor?", "Beep!", "Beep!"]
+
+Test: It should substitute any number containing 2 and 3. 
+Code: beepBoop(23)
+Expected Output: [0, 'Beep!', 'Boop!', "Won't you be my neighbor?", 4, 5, 6, 7, 8, 9, "Beep!", "Beep!", "Boop!", "Won't you be my neighbor?", "Beep!", "Beep!", "Beep!", "Beep!", "Beep!", "Beep!", "Boop!", "Boop!", "Boop!", "Won't you be my neighbor?"]
