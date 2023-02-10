@@ -94,5 +94,12 @@ function handleForm(event) {
 
 window.addEventListener("load", function() {
    const form = document.querySelector("form")
+   const boxes = document.querySelectorAll(".box");
+   boxes.forEach(box => {
+    const randomLeft = Math.floor(Math.random() * window.innerWidth);
+    const randomTop = Math.floor(Math.random() * window.innerHeight);
+    box.style.left = `${randomLeft}px`;
+    box.style.top = `${randomTop}px`;
 form.addEventListener("submit", handleForm)
+   });
 });

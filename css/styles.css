@@ -2,3 +2,50 @@ h1 {
   padding-bottom: 5%;
 
 }
+
+@keyframes bounce {
+  from {
+    transform: translateY(0px);
+  }
+  to {
+    transform: translateY(
+      var(--bounce-offset)
+    );
+  }
+}
+
+.box {
+  animation:
+    bounce alternate infinite
+    cubic-bezier(.2, .65, .6, 1);
+    position: absolute;
+}
+.box.one {
+  --bounce-offset: -20px;
+  animation-duration: 200ms;
+  width: 150px;
+  height: 150px;
+  background-color: yellow;
+  border-radius: 50%;
+  display: inline-block;
+}
+.box.two {
+  --bounce-offset: -30px;
+  animation-duration: 300ms;
+  width: 80px;
+  height: 80px;
+  background-color: rgb(255, 0, 195);
+  border-radius: 50%;
+  display: inline-block;
+}
+.box.three {
+  --bounce-offset: -40px;
+  animation-duration: 400ms;
+  width: 50px;
+  height: 50px;
+  background-color: rgb(0, 94, 255);
+  border-radius: 50%;
+  display: inline-block;
+}
+
+  
