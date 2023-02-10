@@ -11,24 +11,27 @@
   <title>Document</title>
 </head>
 <body>
-  <form>
-    <div class="form-floating mb-3">
-      <input type="text" readonly class="form-control-plaintext" id="floatingEmptyPlaintextInput" placeholder="name@example.com">
-      <label for="floatingEmptyPlaintextInput">Empty input</label>
+  <h1> Mr. Rodoger's Neighborhood</h1>
+  <form id="generator">
+    <!-- <div class="form-floating mb-3">
+      <input type="text" readonly class="form-control-plaintext" id="floatingEmptyPlaintextInput" placeholder="About">
+      <label for="floatingEmptyPlaintextInput">Ready to try it out?</label>
     </div>
     <div class="form-floating mb-3">
-      <input type="text" readonly class="form-control-plaintext" id="floatingPlaintextInput" placeholder="Things to know" value="name@example.com">
-      <label for="floatingPlaintextInput">Input with value</label>
-    </div>
+      <input type="text" readonly class="form-control-plaintext" id="floatingPlaintextInput" placeholder="Things to know" value="Go ahead and select a number. Click submit and watch the fun happen. Go on! What are you waiting for?">
+      <label for="floatingPlaintextInput">Are you sure?</label>
+    </div> -->
     <div class="form-floating mb-3">
-      <input type="text" class="form-control" id="floatingInput" placeholder="name@example.com">
+      <input type="text" class="form-control" id="floatingInput" placeholder="number">
       <label for="floatingInput">Put in a Number</label>
     </div>
-    <button type="submit" class="btn btn-info">Submit</button>
+    <button type="submit" id="button" class="btn btn-info">Submit</button>
+    <br>
   </form>
+  <br>
   <div>
+    <h3>Results: </h3>
     <p id="results" class="hidden">
-      Results: 
     </p>
   </div>
 </body>

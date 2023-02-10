@@ -89,9 +89,10 @@ function handleForm(event) {
   const userInput = parseInt(document.getElementById("floatingInput").value);
   const results = beepBoop(userInput);
   document.getElementById("results").innerHTML = results.join(", ");
-}
+  document.getElementById("generator").reset();
+} 
 
 window.addEventListener("load", function() {
    const form = document.querySelector("form")
-addEventListener("submit", handleForm)
+form.addEventListener("submit", handleForm)
 });
