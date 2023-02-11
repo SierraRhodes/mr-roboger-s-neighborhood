@@ -1,6 +1,22 @@
+body {
+  background-color: white;
+}
+
+#button {
+  margin-top: 3%;
+}
+
+h1, h3, #results {
+  font-family: "SwungNoteW01", sans-serif;
+}
 h1 {
+  color: black;
   padding-bottom: 5%;
 
+}
+
+h3 {
+  color: black;
 }
 
 @keyframes bounce {
@@ -48,4 +64,12 @@ h1 {
   display: inline-block;
 }
 
-  
+#floatingInput {
+  float: center !important;
+  /* width: 200px !important; */
+}
+
+#results {
+  color: black;
+}
+
