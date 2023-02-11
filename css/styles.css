@@ -1,5 +1,5 @@
 body {
-  background-color: white;
+  background-color: black;
 }
 
 #button {
@@ -10,13 +10,19 @@ h1, h3, #results {
   font-family: "SwungNoteW01", sans-serif;
 }
 h1 {
-  color: black;
+  border: #fefae0 solid 5px;
+  color: #fefae0;
   padding-bottom: 5%;
+  padding-top: 5%;
+  text-align: center;
 
 }
 
 h3 {
-  color: black;
+  color: #fefae0;
+  font-size: 30px;
+  text-align: center;
+
 }
 
 @keyframes bounce {
@@ -65,11 +71,15 @@ h3 {
 }
 
 #floatingInput {
-  float: center !important;
+  margin-top: 15% !important;
   /* width: 200px !important; */
 }
 
+
 #results {
-  color: black;
+  border: #fefae0 solid 2px;
+  color: whitesmoke;
+  font-size: 20px;
 }
+
 
