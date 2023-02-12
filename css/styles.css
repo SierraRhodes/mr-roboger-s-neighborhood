@@ -3,7 +3,9 @@ body {
 }
 
 #button {
+  margin-left: 20%;
   margin-top: 3%;
+
 }
 
 h1, h3, #results {
@@ -39,7 +41,7 @@ h3 {
 .box {
   animation:
     bounce alternate infinite
-    cubic-bezier(.2, .65, .6, 1);
+    cubic-bezier(.5, .65, .6, 1);
     position: absolute;
 }
 .box.one {
@@ -69,10 +71,36 @@ h3 {
   border-radius: 50%;
   display: inline-block;
 }
+.box.four {
+  --bounce-offset: -20px;
+  animation-duration: 200ms;
+  width: 150px;
+  height: 150px;
+  background-color: rgb(255, 0, 0);
+  border-radius: 50%;
+  display: inline-block;
+}
+.box.five {
+  --bounce-offset: -30px;
+  animation-duration: 300ms;
+  width: 80px;
+  height: 80px;
+  background-color: rgb(30, 149, 4);
+  border-radius: 50%;
+  display: inline-block;
+}
+.box.six {
+  --bounce-offset: -40px;
+  animation-duration: 400ms;
+  width: 50px;
+  height: 50px;
+  background-color: rgb(255, 149, 0);
+  border-radius: 50%;
+  display: inline-block;
+}
 
 #floatingInput {
   margin-top: 15% !important;
-  /* width: 200px !important; */
 }
 
 
